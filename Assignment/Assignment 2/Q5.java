@@ -27,7 +27,7 @@ public class Q5 {
         System.out.println("\nPart c\n");
 
         int k = 4;
-        int rows = 4;
+        int rows = 5;
         for(int i=1; i<=rows; i++){
             /* Print leading spaces */
             for(int j=1; j<i; j++){

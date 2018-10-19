@@ -8,7 +8,7 @@ public class Q11 {
         System.out.print("Input Number : ");
         num = scanner.nextInt();
 
-        for (int i = 1; i < num; i++) {
+        for (int i = 1; i <= num; i++) {
             total+=i;
         }
 
