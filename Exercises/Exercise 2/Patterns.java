@@ -1,11 +1,26 @@
+import java.util.Scanner;
+
 public class Patterns {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
         Patterns patterns = new Patterns();
 
-        patterns.triangle();
-        patterns.square();
-        patterns.cross();
-        patterns.diamond();
+        System.out.print("Input pattern type  : ");
+        int type = scanner.nextInt();
+        
+        switch (type){
+            case 1 : patterns.triangle();
+                    break;
+            case 2 : patterns.square();
+                    break;
+            case 3 : patterns.cross();
+                    break;
+            case 4 : patterns.diamond();
+                    break;
+            default:
+                System.out.println("Invalid type !!");
+            
+        }
     }
 
     private void triangle(){
